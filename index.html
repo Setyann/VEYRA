@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="VEYRA Dental — demo website concept for a modern dental clinic in Yerevan." />
+  <title>VEYRA Dental — Care, clearly explained.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+Armenian:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a href="#top" class="brand" aria-label="VEYRA Dental home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 40 40" role="img">
+            <path d="M8 10.5 20 30 32 10.5" fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M14 10.5 20 20.5 26 10.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/>
+          </svg>
+        </span>
+        <span class="brand-copy">
+          <strong>VEYRA</strong>
+          <span>DENTAL</span>
+        </span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#services" data-i18n="navServices">Services</a>
+        <a href="#doctors" data-i18n="navDoctors">Doctors</a>
+        <a href="#prices" data-i18n="navPrices">Prices</a>
+        <a href="#locations" data-i18n="navLocations">Locations</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="language-switcher" aria-label="Language selector">
+          <button class="lang-btn active" data-lang="en" type="button">EN</button>
+          <button class="lang-btn" data-lang="hy" type="button">HY</button>
+          <button class="lang-btn" data-lang="ru" type="button">RU</button>
+        </div>
+        <button class="btn btn-primary header-book" data-open-booking type="button" data-i18n="bookAppointment">Book Appointment</button>
+        <button class="mobile-menu-btn" type="button" aria-label="Open navigation" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-menu" aria-hidden="true">
+      <a href="#services" data-i18n="navServices">Services</a>
+      <a href="#doctors" data-i18n="navDoctors">Doctors</a>
+      <a href="#prices" data-i18n="navPrices">Prices</a>
+      <a href="#locations" data-i18n="navLocations">Locations</a>
+      <a href="#faq">FAQ</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="heroEyebrow">MODERN DENTISTRY IN YEREVAN</p>
+          <h1 data-i18n="heroTitle">Dental care,<br><span>clearly explained.</span></h1>
+          <p class="hero-lead" data-i18n="heroLead">Modern diagnostics, experienced specialists and clear treatment plans — designed around your needs.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary btn-large" data-open-booking type="button" data-i18n="bookAppointment">Book Appointment</button>
+            <a class="btn btn-secondary btn-large" href="#services" data-i18n="exploreServices">Explore Services</a>
+          </div>
+          <div class="hero-note">
+            <span class="status-dot" aria-hidden="true"></span>
+            <span data-i18n="heroNote">Appointments available at Arabkir and Center</span>
+          </div>
+        </div>
+
+        <div class="hero-media reveal reveal-delay">
+          <img src="https://images.unsplash.com/photo-1777331903190-341a3dd0441b?auto=format&fit=crop&fm=jpg&q=82&w=1800" alt="Dentist discussing treatment with a patient in a modern dental clinic" />
+          <div class="hero-card">
+            <span class="hero-card-label" data-i18n="nextAvailable">NEXT AVAILABLE</span>
+            <strong data-i18n="heroCardTitle">General consultation</strong>
+            <p data-i18n="heroCardMeta">Today · VEYRA Center</p>
+            <button type="button" data-open-booking data-i18n="chooseTime">Choose a time →</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="container trust-row reveal">
+        <div><strong>2022</strong><span data-i18n="trustFounded">Founded</span></div>
+        <div><strong>7</strong><span data-i18n="trustSpecialists">Specialists</span></div>
+        <div><strong>2</strong><span data-i18n="trustLocations">Locations</span></div>
+        <div><strong>3</strong><span data-i18n="trustLanguages">Languages</span></div>
+      </div>
+    </section>
+
+    <section class="intro-band">
+      <div class="container intro-grid reveal">
+        <p class="eyebrow" data-i18n="introEyebrow">A CLEARER FIRST STEP</p>
+        <div>
+          <h2 data-i18n="introTitle">Know what happens before treatment begins.</h2>
+          <p data-i18n="introText">VEYRA is built around clear options, understandable treatment plans and published indicative pricing. You should know what you’re choosing — and why.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section-pad" id="services">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow" data-i18n="servicesEyebrow">SERVICES</p>
+            <h2 data-i18n="servicesTitle">Care for every stage.</h2>
+          </div>
+          <p data-i18n="servicesText">Start with the reason for your visit. We’ll help you choose the right specialist if you’re not sure.</p>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card service-card-large reveal">
+            <span class="service-number">01</span>
+            <div>
+              <h3 data-i18n="serviceGeneral">General & Restorative</h3>
+              <p data-i18n="serviceGeneralDesc">Check-ups, fillings, root canal treatment and restorations focused on preserving natural tooth structure.</p>
+            </div>
+            <div class="service-bottom">
+              <span data-i18n="from25000">from 25,000 ֏</span>
+              <button class="text-link" type="button" data-service="General & Restorative Dentistry" data-open-booking data-i18n="bookService">Book service →</button>
+            </div>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">02</span>
+            <h3 data-i18n="serviceOrtho">Orthodontics</h3>
+            <p data-i18n="serviceOrthoDesc">Braces, aligners and orthodontic planning.</p>
+            <div class="service-bottom"><span data-i18n="from15000">consultation 15,000 ֏</span><button class="text-link" type="button" data-service="Orthodontics" data-open-booking data-i18n="bookService">Book service →</button></div>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">03</span>
+            <h3 data-i18n="serviceImplants">Implantology</h3>
+            <p data-i18n="serviceImplantsDesc">Implant consultations, placement and coordinated restorations.</p>
+            <div class="service-bottom"><span data-i18n="from170000">from 170,000 ֏</span><button class="text-link" type="button" data-service="Implantology" data-open-booking data-i18n="bookService">Book service →</button></div>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">04</span>
+            <h3 data-i18n="serviceCosmetic">Cosmetic Dentistry</h3>
+            <p data-i18n="serviceCosmeticDesc">Whitening, bonding and aesthetic treatment planning.</p>
+            <div class="service-bottom"><span data-i18n="from40000">from 40,000 ֏</span><button class="text-link" type="button" data-service="Cosmetic Dentistry" data-open-booking data-i18n="bookService">Book service →</button></div>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">05</span>
+            <h3 data-i18n="servicePediatric">Pediatric Dentistry</h3>
+            <p data-i18n="servicePediatricDesc">Calm preventive and restorative care for children.</p>
+            <div class="service-bottom"><span data-i18n="from8000">from 8,000 ֏</span><button class="text-link" type="button" data-service="Pediatric Dentistry" data-open-booking data-i18n="bookService">Book service →</button></div>
+          </article>
+
+          <article class="service-card reveal">
+            <span class="service-number">06</span>
+            <h3 data-i18n="servicePreventive">Preventive Care</h3>
+            <p data-i18n="servicePreventiveDesc">Routine checks, hygiene consultations and professional cleaning.</p>
+            <div class="service-bottom"><span data-i18n="from10000">from 10,000 ֏</span><button class="text-link" type="button" data-service="Preventive Dentistry" data-open-booking data-i18n="bookService">Book service →</button></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="path section-pad">
+      <div class="container path-shell reveal">
+        <div class="path-heading">
+          <p class="eyebrow light" data-i18n="pathEyebrow">YOUR TREATMENT PLAN</p>
+          <h2 data-i18n="pathTitle">A treatment plan you can actually understand.</h2>
+          <p data-i18n="pathText">Each step is explained before you decide how to proceed.</p>
+        </div>
+        <div class="path-steps">
+          <div class="path-step"><span>01</span><strong data-i18n="stepDiagnose">Diagnose</strong><p data-i18n="stepDiagnoseDesc">Assessment and diagnostics where needed.</p></div>
+          <div class="path-step"><span>02</span><strong data-i18n="stepDiscuss">Discuss</strong><p data-i18n="stepDiscussDesc">Options, priorities and questions.</p></div>
+          <div class="path-step"><span>03</span><strong data-i18n="stepPlan">Plan</strong><p data-i18n="stepPlanDesc">Stages, timeline and estimated cost.</p></div>
+          <div class="path-step"><span>04</span><strong data-i18n="stepTreat">Treat</strong><p data-i18n="stepTreatDesc">Care delivered according to the agreed plan.</p></div>
+          <div class="path-step"><span>05</span><strong data-i18n="stepFollow">Follow up</strong><p data-i18n="stepFollowDesc">Review, maintenance and next steps.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="doctors section-pad" id="doctors">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow" data-i18n="doctorsEyebrow">DENTAL TEAM</p>
+            <h2 data-i18n="doctorsTitle">Choose a specialist — or let us match you.</h2>
+          </div>
+          <p data-i18n="doctorsText">The first version keeps doctor selection simple: specialty, languages, location and next available day.</p>
+        </div>
+
+        <div class="doctor-grid">
+          <article class="doctor-card reveal">
+            <div class="doctor-avatar avatar-one"><span>NA</span></div>
+            <div class="doctor-info">
+              <span class="doctor-role" data-i18n="roleGeneral">General & Restorative Dentist</span>
+              <h3>Dr. Nare Avetian</h3>
+              <p data-i18n="doctorNareMeta">9 years · EN / HY / RU · Arabkir & Center</p>
+              <button class="text-link" type="button" data-doctor="Dr. Nare Avetian" data-open-booking data-i18n="bookWithDoctor">Book with doctor →</button>
+            </div>
+          </article>
+
+          <article class="doctor-card reveal">
+            <div class="doctor-avatar avatar-two"><span>MV</span></div>
+            <div class="doctor-info">
+              <span class="doctor-role" data-i18n="roleOrtho">Orthodontist</span>
+              <h3>Dr. Mari Tadevosian</h3>
+              <p data-i18n="doctorMariMeta">8 years · EN / HY / RU · Arabkir & Center</p>
+              <button class="text-link" type="button" data-doctor="Dr. Mari Tadevosian" data-open-booking data-i18n="bookWithDoctor">Book with doctor →</button>
+            </div>
+          </article>
+
+          <article class="doctor-card reveal">
+            <div class="doctor-avatar avatar-three"><span>AV</span></div>
+            <div class="doctor-info">
+              <span class="doctor-role" data-i18n="roleImplant">Implantologist & Oral Surgeon</span>
+              <h3>Dr. Arman Velikyan</h3>
+              <p data-i18n="doctorArmanMeta">13 years · EN / HY / RU · Arabkir</p>
+              <button class="text-link" type="button" data-doctor="Dr. Arman Velikyan" data-open-booking data-i18n="bookWithDoctor">Book with doctor →</button>
+            </div>
+          </article>
+
+          <article class="doctor-card reveal">
+            <div class="doctor-avatar avatar-four"><span>ES</span></div>
+            <div class="doctor-info">
+              <span class="doctor-role" data-i18n="rolePediatric">Pediatric Dentist</span>
+              <h3>Dr. Elina Sahakyan</h3>
+              <p data-i18n="doctorElinaMeta">7 years · EN / HY / RU · Arabkir</p>
+              <button class="text-link" type="button" data-doctor="Dr. Elina Sahakyan" data-open-booking data-i18n="bookWithDoctor">Book with doctor →</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="prices section-pad" id="prices">
+      <div class="container price-grid">
+        <div class="price-copy reveal">
+          <p class="eyebrow" data-i18n="pricesEyebrow">INDICATIVE PRICING</p>
+          <h2 data-i18n="pricesTitle">Clear prices. Fewer surprises.</h2>
+          <p data-i18n="pricesText">Common treatments have published indicative prices. Case-dependent costs are confirmed after assessment.</p>
+          <button class="btn btn-secondary" data-open-booking type="button" data-i18n="bookConsultation">Book a consultation</button>
+        </div>
+
+        <div class="price-list reveal">
+          <div class="price-item"><span data-i18n="priceConsultation">General consultation</span><strong>10,000 ֏</strong></div>
+          <div class="price-item"><span data-i18n="priceCleaning">Professional cleaning</span><strong data-i18n="priceFrom25000">from 25,000 ֏</strong></div>
+          <div class="price-item"><span data-i18n="priceFilling">Composite filling</span><strong data-i18n="priceFrom25000">from 25,000 ֏</strong></div>
+          <div class="price-item"><span data-i18n="priceWhitening">Teeth whitening</span><strong data-i18n="priceFrom85000">from 85,000 ֏</strong></div>
+          <div class="price-item"><span data-i18n="priceImplant">Implant placement</span><strong data-i18n="priceFrom170000">from 170,000 ֏</strong></div>
+          <div class="price-item"><span data-i18n="priceBraces">Metal braces</span><strong data-i18n="priceFrom380000">from 380,000 ֏</strong></div>
+          <p class="price-disclaimer" data-i18n="priceDisclaimer">Final treatment cost may vary depending on individual clinical needs, materials and treatment complexity.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="locations section-pad" id="locations">
+      <div class="container">
+        <div class="section-heading reveal">
+          <div>
+            <p class="eyebrow" data-i18n="locationsEyebrow">LOCATIONS</p>
+            <h2 data-i18n="locationsTitle">Two clinics. One coordinated team.</h2>
+          </div>
+          <p data-i18n="locationsText">Choose the location that works for you. Both addresses below are fictional demo locations.</p>
+        </div>
+
+        <div class="location-grid">
+          <article class="location-card reveal">
+            <div class="location-map map-one" aria-hidden="true">
+              <span class="map-grid"></span><span class="map-pin"></span><span class="demo-map-label">DEMO MAP</span>
+            </div>
+            <div class="location-content">
+              <span class="location-badge" data-i18n="mainClinic">MAIN CLINIC</span>
+              <h3>VEYRA Arabkir</h3>
+              <p>18 Nairi View Street · Yerevan 0033</p>
+              <div class="hours"><span data-i18n="weekdays">Mon–Fri</span><strong>09:00–20:00</strong></div>
+              <div class="hours"><span data-i18n="saturday">Saturday</span><strong>10:00–18:00</strong></div>
+              <button class="text-link" type="button" data-location="Arabkir" data-open-booking data-i18n="bookHere">Book here →</button>
+            </div>
+          </article>
+
+          <article class="location-card reveal">
+            <div class="location-map map-two" aria-hidden="true">
+              <span class="map-grid"></span><span class="map-pin"></span><span class="demo-map-label">DEMO MAP</span>
+            </div>
+            <div class="location-content">
+              <span class="location-badge" data-i18n="cityClinic">CITY CLINIC</span>
+              <h3>VEYRA Center</h3>
+              <p>7 Cascade Park Lane · Yerevan 0009</p>
+              <div class="hours"><span data-i18n="weekdays">Mon–Fri</span><strong>10:00–20:00</strong></div>
+              <div class="hours"><span data-i18n="saturday">Saturday</span><strong>10:00–17:00</strong></div>
+              <button class="text-link" type="button" data-location="Center" data-open-booking data-i18n="bookHere">Book here →</button>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq section-pad" id="faq">
+      <div class="container faq-grid">
+        <div class="faq-copy reveal">
+          <p class="eyebrow">FAQ</p>
+          <h2 data-i18n="faqTitle">Useful answers before you book.</h2>
+          <p data-i18n="faqText">Only the questions that matter before a first visit.</p>
+        </div>
+        <div class="faq-list reveal">
+          <details>
+            <summary data-i18n="faq1q">What if I don’t know which service I need?</summary>
+            <p data-i18n="faq1a">Choose General Consultation. The clinic can match you with the appropriate specialist after an initial assessment.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq2q">Can I choose my dentist?</summary>
+            <p data-i18n="faq2a">Yes. Select a specific dentist during booking, or choose any available doctor.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq3q">Do your dentists speak English?</summary>
+            <p data-i18n="faq3a">Yes. English-speaking appointments are available across the main treatment areas.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq4q">Are the prices on the website final?</summary>
+            <p data-i18n="faq4a">Predictable services use fixed indicative prices. Complex treatment is confirmed after consultation and planning.</p>
+          </details>
+          <details>
+            <summary data-i18n="faq5q">Do you work on Saturdays?</summary>
+            <p data-i18n="faq5a">Yes. Both demo locations have Saturday appointment hours.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="container final-cta-inner reveal">
+        <div>
+          <p class="eyebrow light" data-i18n="finalEyebrow">PLAN YOUR VISIT</p>
+          <h2 data-i18n="finalTitle">Ready to take the first step?</h2>
+          <p data-i18n="finalText">Choose a clinic, service and convenient appointment date. We’ll keep the rest simple.</p>
+        </div>
+        <button class="btn btn-light btn-large" data-open-booking type="button" data-i18n="bookAppointment">Book Appointment</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a href="#top" class="brand footer-brand">
+          <span class="brand-mark" aria-hidden="true">
+            <svg viewBox="0 0 40 40"><path d="M8 10.5 20 30 32 10.5" fill="none" stroke="currentColor" stroke-width="4.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 10.5 20 20.5 26 10.5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" opacity=".55"/></svg>
+          </span>
+          <span class="brand-copy"><strong>VEYRA</strong><span>DENTAL</span></span>
+        </a>
+        <p class="footer-note" data-i18n="demoNotice">Fictional dental clinic created for a portfolio demonstration. No real appointments are processed.</p>
+      </div>
+      <div class="footer-links"><strong data-i18n="footerNavigate">Navigate</strong><a href="#services" data-i18n="navServices">Services</a><a href="#doctors" data-i18n="navDoctors">Doctors</a><a href="#prices" data-i18n="navPrices">Prices</a><a href="#locations" data-i18n="navLocations">Locations</a></div>
+      <div class="footer-links"><strong data-i18n="footerContact">Demo contact</strong><span>hello@veyra.example</span><span>+374 10 000 000</span><span>EN · HY · RU</span></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 VEYRA Dental — Demo</span><span data-i18n="careClearly">Care, clearly explained.</span></div>
+  </footer>
+
+  <button class="mobile-book" type="button" data-open-booking data-i18n="bookAppointment">Book Appointment</button>
+
+  <div class="booking-modal" id="bookingModal" aria-hidden="true">
+    <div class="booking-backdrop" data-close-booking></div>
+    <section class="booking-panel" role="dialog" aria-modal="true" aria-labelledby="bookingTitle">
+      <button class="modal-close" type="button" data-close-booking aria-label="Close booking">×</button>
+      <div class="booking-header">
+        <p class="eyebrow" data-i18n="bookingEyebrow">APPOINTMENT REQUEST</p>
+        <h2 id="bookingTitle" data-i18n="bookingTitle">Plan your visit.</h2>
+        <p data-i18n="bookingSub">This is a portfolio demo. Your request stays in this browser and is not sent to a real clinic.</p>
+      </div>
+
+      <form class="booking-form" id="bookingForm">
+        <label><span data-i18n="fieldLocation">Location</span><select name="location" required><option value="" data-i18n="selectLocation">Select location</option><option value="Arabkir">VEYRA Arabkir</option><option value="Center">VEYRA Center</option></select></label>
+        <label><span data-i18n="fieldService">Service</span><select name="service" required><option value="" data-i18n="selectService">Select service</option><option>General Consultation</option><option>Preventive Dentistry</option><option>General & Restorative Dentistry</option><option>Orthodontics</option><option>Implantology</option><option>Cosmetic Dentistry</option><option>Pediatric Dentistry</option></select></label>
+        <label><span data-i18n="fieldDoctor">Doctor</span><select name="doctor"><option value="Any available doctor" data-i18n="anyDoctor">Any available doctor</option><option>Dr. Nare Avetian</option><option>Dr. Mari Tadevosian</option><option>Dr. Arman Velikyan</option><option>Dr. Elina Sahakyan</option></select></label>
+        <label><span data-i18n="fieldDate">Preferred date</span><input type="date" name="date" required></label>
+        <label><span data-i18n="fieldName">Your name</span><input type="text" name="name" autocomplete="name" required placeholder="Name"></label>
+        <label><span data-i18n="fieldPhone">Phone</span><input type="tel" name="phone" autocomplete="tel" required placeholder="+374 …"></label>
+        <button class="btn btn-primary btn-large form-submit" type="submit" data-i18n="sendRequest">Send demo request</button>
+      </form>
+
+      <div class="booking-success" id="bookingSuccess" hidden>
+        <div class="success-icon">✓</div>
+        <p class="eyebrow" data-i18n="requestReceived">REQUEST RECEIVED</p>
+        <h2 data-i18n="successTitle">Your demo appointment is saved.</h2>
+        <p data-i18n="successText">No information was sent anywhere. This demo stores the request only in your browser.</p>
+        <div class="request-id"><span data-i18n="requestId">Request ID</span><strong id="requestId">VYR-0000</strong></div>
+        <button class="btn btn-secondary" type="button" data-close-booking data-i18n="close">Close</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
